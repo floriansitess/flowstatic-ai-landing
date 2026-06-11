@@ -20,7 +20,7 @@ const pricingList = [
 function Pricing({ darkMode }) {
   return (
     <section
-      className={`py-24 px-6 ${
+      className={`py md:py-24 px-6 ${
         darkMode
           ? "bg-slate-950"
           : "bg-gradient-to-b from-slate-50 to-blue-100"

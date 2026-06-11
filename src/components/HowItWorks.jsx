@@ -18,13 +18,13 @@ const howItWorksList = [
 
 function HowItWorks({ darkMode }) {
   return (
-    <section className={`py-24 px-6 ${darkMode
+    <section className={`py-16 md:py-24 px-6 ${darkMode
       ? "bg-slate-950"
       : "bg-gradient-to-b from-blue-100 to-blue-50"
     }`}
     >
       <div className="max-w-6xl mx-auto">
-        <div className={`max-w-2xl mx-auto text-center backdrop-blur rounded-3xl p-8 shadow-sm mb-16 ${darkMode
+        <div className={`max-w-2xl mx-auto text-center backdrop-blur rounded-3xl p-6 md:p-8 shadow-sm mb-10 md:mb-16 ${darkMode
           ? "bg-slate-900 border-slate-700"
           : "bg-white"
         }`}
@@ -55,7 +55,7 @@ function HowItWorks({ darkMode }) {
               key={step.title}
               className="relative z-10 flex flex-col items-center text-center flex-1"
             >
-              <div className={`w-20 h-20 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg border-4 mb-6 ${darkMode
+              <div className={`w-16 md:w-20 h-16 md:h-20 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg border-4 mb-4 md:mb-6 ${darkMode
                 ? "bg-slate-700 text-slate-950 border-slate-400"
                 : "bg-blue-600 text-white border-white"
               }`}
